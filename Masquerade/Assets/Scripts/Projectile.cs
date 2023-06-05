@@ -9,13 +9,13 @@ public class Projectile : MonoBehaviour
     public int damage;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         Invoke("DestroyProjectile", lifeTime);    
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
@@ -29,7 +29,11 @@ public class Projectile : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
-            collision.GetComponent<Enemy>().Damage(damage);
+            collision.GetComponent<Enemy>().TakeDamage(damage);
+            DestroyProjectile();
+        }
+        else if (collision.tag == "Wall")
+        {
             DestroyProjectile();
         }
     }

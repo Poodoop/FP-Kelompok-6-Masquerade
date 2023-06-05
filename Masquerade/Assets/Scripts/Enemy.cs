@@ -5,8 +5,19 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health;
+    public float speed;
+    public float timeBetweenAttack;
+    public int damage;
 
-    public void Damage(int damageAmount)
+    [HideInInspector]
+    public Transform player;
+
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
+    public void TakeDamage (int damageAmount)
     {
         health -= damageAmount;
 
@@ -15,5 +26,4 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }

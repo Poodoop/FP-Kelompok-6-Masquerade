@@ -4,28 +4,24 @@ using UnityEngine;
 
 public class Camera_Follow : MonoBehaviour
 {
-    public Transform playerTransform;
-    public float speed;
+    public Camera cam;
+    public Transform player;
+    public float threshold;
+    public float smoothSpeed;
 
-    public float minX;
-    public float minY;
-    public float maxX;
-    public float maxY;
-
-    // Start is called before the first frame update
     private void Start()
     {
-        transform.position = playerTransform.position;
+        transform.position = player.position;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (playerTransform != null)
-        {
-            // float clampedX = mathf.Clamp(playerTransform.position.x, minX, maxX);
-            // float clampedY = mathf.Clamp(playerTransform.position.y, minY, maxY);
-            transform.position = Vector2.Lerp(transform.position, playerTransform.position, speed);
-        }
+        Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 targetPosition = (player.position + mousePos) / 2f;
+
+        targetPosition.x = Mathf.Clamp(targetPosition.x, -threshold + player.position.x, threshold + player.position.x);
+        targetPosition.y = Mathf.Clamp(targetPosition.y, -threshold + player.position.y, threshold + player.position.y);
+
+        transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.fixedDeltaTime);
     }
 }
