@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     [HideInInspector]
     public Transform player;
 
-    private void Start()
+    public virtual void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }

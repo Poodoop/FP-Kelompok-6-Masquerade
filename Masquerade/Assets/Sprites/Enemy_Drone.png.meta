@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c4c08a9e3d1efca4da0bbba27e4dd0b6
+guid: 75571fee8dc2ce6449867d04282594d5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,11 +44,11 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 128, y: 192, z: 18, w: 0}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -105,97 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dungeon Tiles #1 64x64_0
+      name: Enemy_Drone_0
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c06ccbb3bd3af8c44a8866050fa246be
-      internalID: -587002941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dungeon Tiles #1 64x64_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22062853d24ee54478941128f42c9a50
-      internalID: 1877017587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dungeon Tiles #1 64x64_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 044f29f038ddcca4da830409c7c51f7f
-      internalID: 631950654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dungeon Tiles #1 64x64_3
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 176
-        width: 18
-        height: 144
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d19561bd11dac9545afa6ee657d973c7
-      internalID: -470554500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dungeon Tiles #1 64x64_4
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 11
-        width: 105
-        height: 105
+        x: 331
+        y: 442
+        width: 486
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eaaeb1493ecb564fa10c51974aa0598
-      internalID: -1212661002
+      spriteID: 69d790108a9795f499ee1ee47e5a35d1
+      internalID: 1128700060
       vertices: []
       indices: 
       edges: []
@@ -213,18 +129,14 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dungeon Tiles #1 64x64_0: -587002941
-      Dungeon Tiles #1 64x64_1: 1877017587
-      Dungeon Tiles #1 64x64_2: 631950654
-      Dungeon Tiles #1 64x64_3: -470554500
-      Dungeon Tiles #1 64x64_4: -1212661002
+      Enemy_Drone_0: 1128700060
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
